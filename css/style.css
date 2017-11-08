@@ -1,28 +1,28 @@
 ﻿body {
-	font-weight: normal;
-	font-size: 16px;
-  font-family: "Roboto", "Arial", sans-serif;
- 	color: #283136;
-	line-height: 24px;
+  font-weight:  normal;
+  font-size:  16px;
+  font-family:  "Roboto", "Arial",  sans-serif;
+  color:  #283136;
+  line-height:  24px;
 }
 .title,
 .list-title,
 .catalog-title {
-	font-weight: bold;
-	color: #000000;
+  font-weight:  bold;
+  color:  #000000;
 }
 
 .title {
-	font-size: 55px;
-	line-height: 55px;
+  font-size:  55px;
+  line-height:  55px;
 }
 
 .list-title {
-	font-size: 18px;
-	line-height: 18px;
+  font-size:  18px;
+  line-height:  18px;
 }
 
 .catalog-title {
-	font-size: 18px;
-	line-height: 30px;
+  font-size:  18px;
+  line-height:  30px;
 }
