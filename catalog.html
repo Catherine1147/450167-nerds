@@ -29,11 +29,11 @@
       <div class="wrapper">
         <section class="filters">
           <h2 class="visually-hidden">Фильтр товаров</h2>
-          <form class="filter" action="#" method="get">
+          <form class="filter" action="https://echo.htmlacademy.ru" method="get">
             <fieldset>
               <legend>Стоимость:</legend>
               <div>
-                <input type="range">
+                <input type="range" class="visually-hidden">
               </div>
               <label>От
                 <input type="text" value="0">
@@ -104,8 +104,16 @@
             </ul>
     
             <ul>
-              <li><a href="#" class="catalog-arrow-down catalog-arrow-active"></a></li>
-              <li><a href="#" class="catalog-arrow-up"></a></li>
+              <li>
+                <a href="#" class="catalog-arrow-down catalog-arrow-active">
+                  <span class="visually-hidden">Сортировка по убыванию цены</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="catalog-arrow-up">
+                  <span class="visually-hidden">Сортировка по возрастанию цены</span>
+                </a>
+              </li>
             </ul>
           </div>
 		   
@@ -196,9 +204,9 @@
         <section class="share">
           <h2 class="visually-hidden">Мы в социальных сетях</h2>
           <ul>
-            <li><a href="#" class="social social-vk">Вконтакте</a></li>
-            <li><a href="#" class="social social-fb">Фейсбук</a></li>
-            <li><a href="#" class="social social-inst">Инстаграм</a></li>
+            <li><a href="#" class="social social-vk"><span class="visually-hidden">Вконтакте</span></a></li>
+            <li><a href="#" class="social social-fb"><span class="visually-hidden">Фейсбук</span></a></li>
+            <li><a href="#" class="social social-inst"><span class="visually-hidden">Инстаграм</span></a></li>
           </ul>
 		
           <div>
