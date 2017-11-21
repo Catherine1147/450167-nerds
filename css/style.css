@@ -1,10 +1,49 @@
-﻿body {
+﻿body	  {
+  margin:  0;
+  padding:  0;
   font-weight:  normal;
   font-size:  16px;
-  font-family:  "Roboto", "Arial",  sans-serif;
+  font-family:  "Roboto",  "Arial",  sans-serif;
   color:  #283136;
   line-height:  24px;
+  background-color:  #ffffff;
+
+  }
+  
+a  {
+  text-decoration:  none;
+  }
+ 
+.page-header  {
+  background-color:  #eeeeee;
+  color:  #000000;
+  }
+   
+.page-header  a  {
+  color:  #000000;
+  }
+  
+.page-header  a:hover  {
+  color:  #fb565a;
 }
+
+.page-header  a:focus  {
+  color:  #000000;
+  opacity:  0.3;
+  }
+  
+.page-header  a.active{
+  border-bottom:  2px  solid  #fb565a;
+  
+}
+
+
+   
+.main-menu  {
+  font-size:  16px;
+  line-height:  30px;
+}
+
 .title,
 .list-title,
 .catalog-title {
@@ -12,17 +51,358 @@
   color:  #000000;
 }
 
-.title {
+.title  {
   font-size:  55px;
   line-height:  55px;
 }
 
-.list-title {
+.list-title  {
   font-size:  18px;
+  line-height:  18px;
+  }
+
+.catalog-title  {
+  font-size:  18px;
+  line-height:  30px;
+  }
+
+.site-navigation  {
+  list-style:  none;
+  }
+
+.slider  {
+  background-color:  #eeeeee;
+  }
+
+.slider  b  {
+  font-weight:  bold;
+  font-size:  55px;
+  line-height:  55px;
+  }
+.promo-1  {
+  background-image:  url("../img/slide1.png");
+  background-repeat:  no-repeat;
+  background-position:  top  right;
+  }
+ 
+.promo-2  {
+  background-image:  url("../img/slide2.png");
+  background-repeat:  no-repeat;
+  background-position:  top  right;
+  }
+  
+.promo-3  {
+  background-image:  url("../img/slide3.png");
+  background-repeat:  no-repeat;
+  background-position:  top  right;
+  }
+  
+.promo a  {
+  color:  #ffffff;
+  background-color:  #fb565a;
+  }
+  
+.promo  a:hover  {
+  background-color:  #e74246;
+}
+
+.promo  a:focus  {
+  background-color:  #d7373b;
+}
+.service-title  {
+  font-size:  24px;
+  line-height:  30px;
+  text-transform:  uppercase;
+}
+  
+.services-list  {
+  list-style:  none;
+}
+.sites  {
+  background-image:  url("..//img/illustration-1.png");
+  background-repeat:  no-repeat;
+  background-position:  top  center;
+}
+ 
+.apps  {
+  background-image:  url("..//img/illustration-2.png");
+  background-repeat:  no-repeat;
+  background-position:  top  center;
+} 
+  
+.presentations  {
+  background-image:  url("..//img/illustration-3.png");
+  background-repeat:  no-repeat;
+  background-position:  top  center;
+} 
+
+.service-item a  {
+  color:  #ffffff;
+  }
+  
+.sites  a{
+  background-color:  #fb565a;
+  }
+  
+.sites  a:hover  {
+  background-color:  #e74246;
+}
+.sites  a:focus  {
+  background-color:  #d7373b;
+}
+.apps  a{
+  background-color:  #00ca74;
+  }
+ 
+.apps  a:hover  {
+  background-color:  #00bc6c;
+}
+
+.apps  a:focus  {
+  background-color:  #00aa62;
+}
+
+.presentations  a{
+  background-color:  #efc849;
+  } 
+
+.presentations  a:hover  {
+  background-color:  #eab534;
+}
+
+.presentations  a:focus  {
+  background-color:  #e5a722;
+}
+
+.about-us  b  {
+  font-size:  45px;
+  line-height:  45px;
+  }
+
+.about-us-title  {
+  text-transform:  uppercase;
+}
+
+.about-us  th  {
+  font-size:  45px;
+  line-height:  10,06px;
+}
+
+.about-us  td  {
+  font-size:  16px;
   line-height:  18px;
 }
 
-.catalog-title {
+.clients  a  {
+  opacity:  0.2;
+}
+
+.clients  a:hover  {
+  opacity:  1;
+}
+
+.clients  a:focus  {
+  opacity:  0.1;
+}
+.address  b  {
   font-size:  18px;
   line-height:  30px;
+  }
+  
+.address  p  {
+  font-size:  16px;
+  line-height:  18px;
+  }
+  
+.address  a  {
+  color:  #ffffff;
+  background-color:  #fb565a;
+  }
+  
+.write-us  legend  {
+  font-size:  45px;
+  line-height:  45px;
+  }
+  
+.write-us label,
+.write-us input[type="text"],
+.write-us  textarea  {
+  font-size:  16px;
+  line-height:  18px;
+  }
+  
+.write-us input:hover  {
+  border-color:  #b4b9bb;
+  }
+
+.write-us input:focus  {
+  border-color:  #000000;
+  outline:  0;
+  color:  #444444;
 }
+
+.write-us  input:invalid  {
+  border-color:  #e74246;
+  color:  #e74246;
+}
+.write-us  button  {
+  color:  #ffffff;
+  background-color:  #fb565a;
+  border:  0;
+  }
+  
+.share-list  {
+  list-style:  none;
+  }
+
+.share-list  a  {
+  background-color:  #e1e1e1;
+  }
+
+.share-list  a:hover  {
+  background-color:  #e74246;
+}
+
+.share-list  a:focus  {
+  background-color:  #d7373b;
+}
+.share  b  {
+  font-size:  36px;
+  line-height:  36px;
+}
+
+.share  p  {
+  font-size:  16px;
+  line-height:  22px;
+}
+
+.filters  fieldset  {
+  border:  none;
+  }
+  
+.filters  input[type="range"]  {
+  background-color:  #eeeeee;
+  }
+
+.filters  input[type="text"]  {
+  background-color:  #eeeeee;
+  }
+
+.filters  ul  {
+  list-style:  none;
+  }
+
+.filters  legend  {
+  font-size:  18px;
+  line-height:  30px;
+  text-transform:  uppercase;
+  font-weight:  bold;
+  }
+
+.filter-input+label  {
+  font-size:  16px;
+  line-height:  20px;
+  color:  #283136;
+  }
+
+.filter-input:hover+label  {
+  color:  #000000;
+}
+.filter-button  {
+  background-color:  #eeeeee;
+  border:  0;
+  }
+
+.filter-button:hover  {
+  background-color:  #dfdfdf;
+  }
+  
+.filter-button:focus  {
+  background-color:  d5d5d5;
+  opacity:  0.3;
+  outline:  none;
+  }
+
+
+
+.main-gallery  .list-title  {
+  font-size:  18px;
+  line-height:  18px;
+  text-transform:  uppercase;
+  }
+
+.main-gallery  ul  {
+  list-style:  none;
+}
+
+.sort{
+  color:  #000000;
+  font-size:  14px;
+  line-height:  18px;
+  text-transform:  uppercase;
+  opacity:  0.3;
+  }
+
+a:hover.sort  {
+  opacity:  0.6;
+}
+
+.sort-list  a.active,
+a:focus.sort  {
+  opacity:  1;
+  }
+  
+.images-title  {
+  font-size:  18px;
+  line-height:  30px;
+  text-transform:  uppercase;
+  }
+
+.images  p  {
+  font-size:  16px;
+  line-height:  18px;
+}
+.images  button  {
+  color:  #ffffff;
+  background-color:  #fb565a;
+  border:  0;
+}
+
+.images  button:hover  {
+  background-color:  #e74246;
+  }
+
+.images  button:focus  {
+  background-color:  #d7373b;
+  outline:  none;
+}
+
+.page-link  {
+  color:  #000000;
+  background-color:  #eeeeee;
+  font-size:  16px;
+  line-height:  18px;
+  }
+
+.page-link.active  {
+  background-color:  #ffffff;
+  border:  1px  solid  #dbdbdb;
+  }
+
+.page-link.next  {
+  text-transform:  uppercase;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+

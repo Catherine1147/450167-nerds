@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic">
     <link rel="stylesheet" href="css/style.css">
+    
   </head>
-	
+  
   <body>
     <header class="page-header">
       <div class="wrapper">
@@ -19,8 +22,8 @@
             <li><a href="catalog.html" class="active">Магазин</a></li>
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
+          <a href="#basket" class="basket">Корзина</a>
         </nav>
-        <a href="#basket" class="basket">Корзина</a>
         <h1 class="title">Магазин готовых шаблонов</h1>
       </div>
     </header>
@@ -95,7 +98,7 @@
 		 
         <section class="main-gallery">
           <h2 class="visually-hidden">Галерея</h2>
-          <div>
+          <div class="sort-list">
             <h3 class="list-title">Сортировать:</h3>
             <ul>
               <li><a href="#" class="sort active">По цене</a></li>
@@ -122,7 +125,7 @@
               <li>
                 <img src="img/img-sedona.jpg" width="360" height="576" alt="Макет «Седона»">
                 <div>
-                  <h3>Sedona</h3>
+                  <h3 class="images-title">Sedona</h3>
                   <p>Информационный сайт для туристов</p>
                   <button type="button">9900 руб.</button>
                 </div>
@@ -131,7 +134,7 @@
               <li>
                 <img src="img/img-pink.jpg" width="360" height="576" alt="Макет «Пинк»">
                 <div>
-                  <h3>Pink App</h3>
+                  <h3 class="images-title">Pink App</h3>
                   <p>Продуктовый лендинг приложения для iOS и Android</p>
                   <button type="button">9900 руб.</button>
                 </div>
@@ -140,7 +143,7 @@
               <li>
                 <img src="img/img-barbershop.jpg" width="360" height="576" alt="Макет «Барбершоп»">
                 <div>
-                  <h3>Barbershop</h3>
+                  <h3 class="images-title">Barbershop</h3>
                   <p>Сайт салона красоты. Для мужчин, да.</p>
                   <button type="button">9900 руб.</button>
                 </div>
@@ -149,7 +152,7 @@
               <li>
                 <img src="img/img-mishka.jpg" width="360" height="576" alt="Макет «Мишка»">
                 <div>
-                  <h3>Mishka</h3>
+                  <h3 class="images-title">Mishka</h3>
                   <p>Интернет-магазин вязаных игрушек</p>
                   <button type="button">9900 руб.</button>
                 </div>
@@ -157,7 +160,7 @@
               <li>
                 <img src="img/img-aplus.jpg" width="360" height="576" alt="Макет «Кваст»">
                 <div>
-                  <h3>Кваст</h3>
+                  <h3 class="images-title">Кваст</h3>
                   <p>Промо-сайт производителя крафтового кваса</p>
                   <button type="button">9900 руб.</button>
                 </div>
@@ -165,7 +168,7 @@
               <li>
                 <img src="img/img-kvast.jpg" width="360" height="576" alt="Макет «А Плюс»">
                 <div>
-                  <h3>A Plus</h3>
+                  <h3 class="images-title">A Plus</h3>
                   <p>Лендинг курсов повышения квалификации</p>
                   <button type="button">9900 руб.</button>
                 </div>
@@ -176,10 +179,10 @@
 		 
 		 
         <div class="paginator">
-          <a href="#1" class="active">1</a>
-          <a href="#2">2</a>
-          <a href="#3">3</a>
-          <a href="#next">следующая</a>
+          <a href="#1" class="page-link active">1</a>
+          <a href="#2" class="page-link">2</a>
+          <a href="#3" class="page-link">3</a>
+          <a href="#next" class="page-link next">следующая</a>
         </div>
       </div>
     </main>
@@ -225,7 +228,7 @@
 	  
         <section class="share">
           <h2 class="visually-hidden">Мы в социальных сетях</h2>
-          <ul>
+          <ul class="share-list">
             <li><a href="#" class="social social-vk"><span class="visually-hidden">Вконтакте</span></a></li>
             <li><a href="#" class="social social-fb"><span class="visually-hidden">Фейсбук</span></a></li>
             <li><a href="#" class="social social-inst"><span class="visually-hidden">Инстаграм</span></a></li>
