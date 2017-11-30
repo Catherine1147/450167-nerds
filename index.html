@@ -29,10 +29,9 @@
 		
 		
     <main class="container">
-      <div class="wrapper">
-        <h1 class="visually-hidden page-title">Студия дизайна «Нёрдс»</h1>
-	  
-        <section class="slider">
+      <h1 class="visually-hidden page-title">Студия дизайна «Нёрдс»</h1>
+      <section class="slider">
+        <div class="wrapper">
           <h2 class="visually-hidden slider-title">Принципы работы</h2>
           <div class="promo-block-1">
             <div class="promo  promo-1">
@@ -55,23 +54,28 @@
               <a href="#">Узнать больше</a>
             </div>
           </div>
-        </section>
-	    
+        </div>
+      </section>
+        
+      <div class="wrapper">
         <section class="services">
           <div class="services-wrapper">
-            <h2 class="visually-hidden">Услуги</h2>
+            <h2 class="visually-hidden service-hidden-title">Услуги</h2>
             <ul class="services-list">
               <li class="service-item sites">
+                <img src="img/illustration-1.png" width="300" height="146" alt="Сайт">
                 <h3 class="service-title">Веб-сайты</h3>
                 <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
                 <a href="#">Заказать</a>
               </li>
               <li class="service-item apps">
+                <img src="img/illustration-2.png" width="300" height="146" alt="Приложение">
                 <h3 class="service-title">Приложения</h3>
                 <p>Покорите топ-10 приложений в AppStore и Google Play</p>
                 <a href="#">Заказать</a>
               </li>
               <li class="service-item presentations">
+                <img src="img/illustration-3.png" width="300" height="146" alt="Презентация">
                 <h3 class="service-title">Презентации</h3>
                 <p>Вы даже не представляете, насколько вы изумительны!</p>
                 <a href="#">Заказать</a>
@@ -81,9 +85,9 @@
         </section>
 		
         <section class="about-us">
-          <h2 class="visually-hidden">О компании</h2>
-          <div class="about-us-flex">
-            <div>
+          <h2 class="visually-hidden info-title">О компании</h2>
+          
+            <div class="about-us-info">
               <p>
                 <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
               </p>
@@ -97,7 +101,7 @@
             </div>
           
           
-            <div>
+            <div class="about-us-numbers">
               <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип студии «Нёрдс»">
               <h3 class="about-us-title">С 2004 года любим точность во всём:</h3>
               <table>
@@ -114,23 +118,23 @@
                 </tr>
               </table>
             </div>
-          </div>
+          
       
         </section>
     
         <section class="clients">
           <h2 class="visually-hidden">Наши клиенты</h2>
           <div class="clients-flex">
-            <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="clients-link">
               <img src="img/logo-1.png" width="199" height="68" alt="Логотип «Html Academy»">
             </a>
-            <a href="#">
+            <a href="#" class="clients-link">
               <img src="img/logo-2.png" width="209" height="87" alt="Логотип «Barbershop»">
             </a>
-            <a href="#">
+            <a href="#" class="clients-link">
               <img src="img/logo-3.png" width="185" height="52" alt="Логотип «Pink»">
             </a>
-            <a href="#">
+            <a href="#" class="clients-link">
               <img src="img/logo-4.png" width="173" height="84" alt="Логотип «Mishka»">
             </a>
           </div>
@@ -139,65 +143,62 @@
     </main>
 	  
     <footer class="page-footer">
-      <div class="wrapper">
-        <section class="contacts">
-          <h2 class="visually-hidden">Контакты</h2>
-          <img src="img/map.png" width="1440" height="416" alt="Карта">
-          
-          <div class="address">
-            <p>
-              <b>NЁRDS DESIGN STUDIO</b><br>
-              191186, Санкт-Петербург<br>
-              ул. Б.Конюшенная, д.19/8<br>
-              <br>
-              тел.+7(812)275-75-75
-            </p>
-            <a href="#">Напишите нам</a>
-          </div>
-          
-          <div class="pop-up">
-            <button class="pop-up-close" type="button" name="button"><span class="visually-hidden">Закрыть всплывающее окно</span></button>
-            <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
-              <fieldset>
-                <legend>Напишите нам</legend>
-                <p>
-                  <label for="your-name">Ваше имя:</label>
-                  <input type="text" name="name" id="your-name" placeholder="Представьтесь, пожалуйста" required>
-                </p>
-                <p>
-                  <label for="your-e-mail">Ваш e-mail:</label>
-                  <input type="text" name="e-mail" id="your-e-mail" placeholder="Для отправки ответа" required>
-                </p>
-                <p>
-                  <label for="your-letter">Текст письма:</label>
-                  <textarea name="letter" id="your-letter" placeholder="В свободной форме"></textarea>
-                </p>
-                <button type="submit">Отправить</button>
-              </fieldset>
-            </form>
-          </div>
-          
-        </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <img src="img/map.png" width="1200" height="416" class="map" alt="Карта">
+        <div class="address">
+          <p>
+            <b>NЁRDS DESIGN STUDIO</b><br>
+               191186, Санкт-Петербург<br>
+               ул. Б.Конюшенная, д.19/8<br>
+            <br>
+               тел.+7(812)275-75-75
+          </p>
+          <a href="#">Напишите нам</a>
+        </div>
+      </section>
 	    
-        <section class="share">
-          <h2 class="visually-hidden">Мы в социальных сетях</h2>
-          <div class="share-wrapper">
-            <ul class="share-list">
-              <li><a href="#" class="social social-vk"><span class="visually-hidden">Вконтакте</span></a></li>
-              <li><a href="#" class="social social-fb"><span class="visually-hidden">Фейсбук</span></a></li>
-              <li><a href="#" class="social social-inst"><span class="visually-hidden">Инстаграм</span></a></li>
-            </ul>
+      <section class="share">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <div class="wrapper  share-wrapper">
+          <ul class="share-list">
+            <li><a href="#" class="social social-vk"><span class="visually-hidden">Вконтакте</span></a></li>
+            <li><a href="#" class="social social-fb"><span class="visually-hidden">Фейсбук</span></a></li>
+            <li><a href="#" class="social social-inst"><span class="visually-hidden">Инстаграм</span></a></li>
+          </ul>
 
-            <div>
-              <b>Давайте дружить, это выгодно!</b>
-              <p>Скидка 10% для друзей из социальных сетей</p>
-            </div>
+          <div class="friendship">
+            <b>Давайте дружить, это выгодно!</b>
+            <p>Скидка 10% для друзей из социальных сетей</p>
           </div>
+        </div>
+       </div>
 
-        </section>
+      </section>
         
-      </div>
+      
     </footer>
+    <div class="pop-up">
+      <button class="pop-up-close" type="button" name="button"><span class="visually-hidden">Закрыть всплывающее окно</span></button>
+      <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend>Напишите нам</legend>
+          <p>
+            <label for="your-name">Ваше имя:</label>
+            <input type="text" name="name" id="your-name" placeholder="Представьтесь, пожалуйста" required>
+          </p>
+          <p>
+            <label for="your-e-mail">Ваш e-mail:</label>
+            <input type="text" name="e-mail" id="your-e-mail" placeholder="Для отправки ответа" required>
+          </p>
+          <p>
+            <label for="your-letter">Текст письма:</label>
+            <textarea name="letter" id="your-letter" placeholder="В свободной форме"></textarea>
+          </p>
+          <button type="submit">Отправить</button>
+        </fieldset>
+      </form>
+    </div>
 	
   </body>
 </html>
