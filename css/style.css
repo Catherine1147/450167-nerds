@@ -673,13 +673,13 @@ input[type="radio"].visually-hidden {
 
 .range-controls .scale {
   height: 2px;
-  background: ##d7dcde;
+  background-color: #d7dcde;
 }
 
 .range-controls .bar {
   width: 70%;
   height: 2px;
-  background: #00ca74;
+  background-color: #00ca74;
 }
 
 .range-controls .toggle {
