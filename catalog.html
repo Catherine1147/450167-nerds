@@ -6,9 +6,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic">
     <link rel="stylesheet" href="css/style.css">
-    
   </head>
-  
   <body>
     <header class="page-header">
       <div class="wrapper">
@@ -22,20 +20,18 @@
             <li><a href="catalog.html" class="active">Магазин</a></li>
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
-          <ul  class="basket-list">
-          <li><a href="#basket" class="basket-link">Корзина</a></li>
+          <ul class="basket-list">
+            <li><a href="#basket" class="basket-link">Корзина</a></li>
           </ul>
         </nav>
         <h1 class="title">Магазин готовых шаблонов</h1>
       </div>
     </header>
-  
     <main class="container">
       <div class="wrapper">
         <div class="filter-flex">
           <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
-          
             <form class="filter" action="https://echo.htmlacademy.ru" method="get">
               <fieldset class="filter-item">
                 <legend class="legend-price">Стоимость:</legend>
@@ -57,21 +53,20 @@
                   </div> 
                 </div>
               </fieldset>
-              
               <fieldset class="filter-item-1">
                 <legend class="filter-legend">Сетка:</legend>
                 <ul class="filter-list">
                   <li class="filter-option">
                     <input class="visually-hidden filter-input filter-input-radio" type="radio" name="network" value="adaptive" id="adaptive" checked>
-                    <label for="adaptive">Адаптивная</label>
+                    <label for="adaptive" class="catalog-label">Адаптивная</label>
                   </li>
                   <li class="filter-option">
                     <input class="visually-hidden filter-input filter-input-radio" type="radio" name="network" value="fix" id="fix">
-                    <label for="fix">Фиксированная</label>
+                    <label for="fix" class="catalog-label">Фиксированная</label>
                   </li>
                   <li class="filter-option">
                     <input class="visually-hidden filter-input filter-input-radio" type="radio" name="network" value="fluid" id="fluid">
-                    <label for="fluid">Резиновая</label>
+                    <label for="fluid" class="catalog-label">Резиновая</label>
                   </li>
                 </ul>
               </fieldset>  
@@ -80,33 +75,29 @@
                 <ul class="filter-list">
                   <li class="filter-option">
                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="slider" name="slider" checked>
-                    <label for="slider">Слайдер</label>
+                    <label for="slider" class="catalog-label">Слайдер</label>
                   </li>
                   <li class="filter-option">
                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="features" name="features">
-                    <label for="features">Блок преимуществ</label>
-                  </li>	
-      
+                    <label for="features" class="catalog-label">Блок преимуществ</label>
+                  </li>
                   <li class="filter-option">
                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="news" name="news" checked>
-                    <label for="news">Новости</label>
+                    <label for="news" class="catalog-label">Новости</label>
                   </li>
-  
                   <li class="filter-option"> 
                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="gallery" name="gallery">
-                    <label for="gallery">Галерея</label>
+                    <label for="gallery" class="catalog-label">Галерея</label>
                   </li>
-  
                   <li class="filter-option">
                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="basket" name="basket">
-                    <label for="basket">Корзина</label>
+                    <label for="basket" class="catalog-label">Корзина</label>
                   </li>
                 </ul>
               </fieldset>
               <button type="submit" class="button filter-button"><span>Показать</span></button>
             </form>
           </section>
- 
           <section class="main-gallery">
             <h2 class="visually-hidden">Галерея</h2>
             <div class="sort-block">
@@ -116,7 +107,6 @@
                 <li><a href="#" class="sort">По типу</a></li>
                 <li><a href="#" class="sort">По названию</a></li>
               </ul>
-    
               <ul class="arrow-list">
                 <li>
                   <a href="#" class="catalog-arrow catalog-arrow-down catalog-arrow-active">
@@ -130,7 +120,6 @@
                 </li>
               </ul>
             </div>
-   
             <div class="images">
               <ul  class="images-list">
                 <li class="images-item images-item-active">
@@ -141,7 +130,6 @@
                     <a href="#" class="images-button">9 900 руб.</a>
                   </div>
                 </li>
-        
                 <li class="images-item">
                   <img src="img/img-pink.jpg" width="360" height="576" alt="Макет «Пинк»">
                   <div class="images-pop-up">
@@ -150,7 +138,6 @@
                     <a href="#" class="images-button">9 900 руб.</a>
                   </div>
                 </li>
-        
                 <li class="images-item">
                   <img src="img/img-barbershop.jpg" width="360" height="576" alt="Макет «Барбершоп»">
                   <div class="images-pop-up">
@@ -187,20 +174,16 @@
                 </li>
               </ul>
             </div>
-          
-        
-
-        <ul class="paginator">
-          <li><a href="#1" class="page-link active">1</a></li>
-          <li><a href="#2" class="page-link">2</a></li>
-          <li><a href="#3" class="page-link">3</a></li>
-          <li><a href="#next" class="page-link next">следующая</a></li>
-        </ul>
-      </section>
+            <ul class="paginator">
+              <li><a href="#1" class="page-link active"><span>1</span></a></li>
+              <li><a href="#2" class="page-link"><span>2</span></a></li>
+              <li><a href="#3" class="page-link"><span>3</span></a></li>
+              <li><a href="#next" class="page-link next"><span>следующая</span></a></li>
+            </ul>
+          </section>
+        </div>
       </div>
-     </div>
     </main>
-  
     <footer class="page-footer">
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
@@ -212,10 +195,7 @@
           <p class="phone">тел.+7(812)275-75-75</p>
           <a href="#" class="address-button">Напишите нам</a>
         </div>
-          
-        
       </section>
-	  
       <section class="share">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <div class="wrapper share-wrapper">
@@ -248,16 +228,13 @@
               </a>
             </li>
           </ul>
-          
           <div class="friendship">
             <b>Давайте дружить, это выгодно!</b>
             <p>Скидка 10% для друзей из социальных сетей</p>
           </div>
         </div>
       </section>
-    
     </footer>
-    
     <div class="pop-up">
       <button class="pop-up-close" type="button" name="button"><span class="visually-hidden">Закрыть всплывающее окно</span></button>
       <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
@@ -282,6 +259,5 @@
         </fieldset>
       </form>
     </div>
-  
   </body>
 </html>

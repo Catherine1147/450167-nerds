@@ -59,16 +59,26 @@ input[type="radio"].visually-hidden {
   margin-right: 200px;
 }
 
+.page-header-logo:hover,
+.page-header-logo:focus {
+  opacity: 0.8;
+}
+
+.page-header-logo:active {
+  opacity: 0.3;
+}
+
 .page-header a {
   color: #000000;
   text-transform: uppercase;
 }
 
-.page-header a:hover {
+.page-header a:hover,
+.page-header a:focus {
   color: #fb565a;
 }
 
-.page-header a:focus {
+.page-header a:active {
   color: #000000;
   opacity: 0.3;
 }
@@ -436,7 +446,8 @@ input[type="radio"].visually-hidden {
 .about-us-numbers {
   width: 360px;
 }
-.about-us-lead b {
+
+.about-us-lead {
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
@@ -624,10 +635,16 @@ input[type="radio"].visually-hidden {
   border-radius: 3px;
 }
 
+.address-button:hover,
+.address-button:focus {
+  background-color: #d6494d;
+}
+
 .contacts {
   background-image: url("../img/group-1.png");
   background-repeat: no-repeat;
   background-position: top center;
+  background-color: #f1efe8;
   height: 416px;
   position: relative;
 }
@@ -716,7 +733,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filters .filter-item-1 {
-  margin-top: 58px;
+  margin-top: 56px;
 }
 
 .filters .filter-item-2 {
@@ -727,7 +744,7 @@ input[type="radio"].visually-hidden {
 .range-controls {
   position: relative;
   height: 41px;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   background-color: #eeeeee;
   padding-top: 41px;
   padding-right: 20px;
@@ -846,6 +863,10 @@ input[type="radio"].visually-hidden {
   margin-bottom: 17px;
 }
 
+.filter-item-2 .filter-legend {
+  margin-bottom: 15px;
+}
+
 .legend-price {
   font-size: 18px;
   line-height: 18px;
@@ -865,11 +886,13 @@ input[type="radio"].visually-hidden {
   color: #283136;
 }
 
-.filter-input + label:hover {
+.filter-input + label:hover,
+.filter-input + label:focus {
   color: #000000;
 }
 
-.filter-input + label:focus {
+.filter-option .catalog-label:hover,
+.filter-option .catalog-label:focus{
   color: #000000;
 }
 
@@ -1302,6 +1325,22 @@ a:focus.sort {
   line-height: 18px;
   margin-right: 11px;
   padding: 15px 20px;
+  border-radius: 2px;
+}
+
+.page-link:hover,
+.page-link:focus {
+  background-color: #dfdfdf;
+  color: #000000;
+}
+
+.page-link:active {
+  background-color: #d5d5d5;
+  box-shadow: 0 -3px 0 0 #bfbfbf;
+}
+
+.page-link:active span {
+  opacity: 0.3;
 }
 
 .paginator li:last-child {
@@ -1417,6 +1456,7 @@ a:focus.sort {
 .pop-up-button:hover,
 .pop-up-button:focus {
   outline: none;
+  background-color: #d6494d;
 }
 
 .pop-up-textarea {
