@@ -1,7 +1,6 @@
 ﻿html,
 body {
   min-width: 1200px;
-  min-height: 2500px;
 }
 
 body {
@@ -165,10 +164,10 @@ input[type="radio"].visually-hidden {
 .sort-title {
   font-size: 18px;
   font-weight: 700;
-  line-height: 18px;
+  line-height: 25px;
   text-transform: uppercase;
   width: 140px;
-  height: 30px;
+  height: 32px;
   margin-right: auto;
 }
 
@@ -451,6 +450,7 @@ input[type="radio"].visually-hidden {
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
+  display: block;
 }
 
 .about-us-title,
@@ -523,7 +523,6 @@ input[type="radio"].visually-hidden {
 
 .clients-link {
   opacity: 0.2;
-  margin-right: 20px;
 }
 
 .clients-link:hover,
@@ -536,6 +535,7 @@ input[type="radio"].visually-hidden {
 }
 
 .clients-item {
+  position: relative;
   width: 300px;
   min-height: 180px;
   display: -webkit-box;
@@ -550,9 +550,9 @@ input[type="radio"].visually-hidden {
           justify-content: center;
 }
 
-.clients-flex .barbershop-link {
-  padding-bottom: 5px;
-  box-sizing: border-box;
+.clients-item:nth-child(4n + 1),
+.clients-item:nth-child(4n + 4) {
+  width: 280px;
 }
 
 .clients img {
@@ -561,31 +561,34 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 }
 
-.clients-link:nth-child(4n + 1),
-.clients-link:nth-child(4n + 4) {
-  width: 280px;
-}
-
-.clients-link:nth-child(4n + 1) img {
-  transform: translate(-12px, 4px);
-}
-
-.clients-link:nth-child(4n + 4) img {
-  transform: translateX(13px);
-}
-
-.clients-item {
-  position: relative;
-}
-
 .clients-item:not(:last-child)::after {
   content: "";
   position: absolute;
   top: 64px;
-  left: 280px;
+  right: 0;
   background-color: #eeeeee;
   width: 2px;
   height: 53px;
+}
+
+.clients-item:nth-child(4n + 1) img {
+  transform: translate(-10px, 0);
+}
+
+.clients-item:nth-child(4n + 4) img {
+  transform: translate(10px, 0);
+}
+
+.clients-item:first-child img {
+  transform: translate(-9px, 5px);
+}
+
+.clients-item:nth-child(4) img {
+  transform: translate(10px, 2px);
+}
+
+.page-footer {
+  padding-bottom: 65px;
 }
 
 .address {
@@ -738,13 +741,13 @@ input[type="radio"].visually-hidden {
 
 .filters .filter-item-2 {
   margin-top: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .range-controls {
   position: relative;
   height: 41px;
-  margin-bottom: 17px;
+  margin-bottom: 14px;
   background-color: #eeeeee;
   padding-top: 41px;
   padding-right: 20px;
@@ -787,10 +790,10 @@ input[type="radio"].visually-hidden {
 
 .price-controls label {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   width: 50%;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 38px;
   text-transform: uppercase;
 }
 
@@ -799,8 +802,11 @@ input[type="radio"].visually-hidden {
 }
 
 .price-controls input {
+  display: inline-block;
+  vertical-align: top;
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
+  line-height: 22px;
   text-align: center;
   color: #283136;
   width: 60px;
@@ -829,10 +835,6 @@ input[type="radio"].visually-hidden {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.filter-list li {
-  margin-bottom: 20px;
 }
 
 .filter-flex {
@@ -869,20 +871,21 @@ input[type="radio"].visually-hidden {
 
 .legend-price {
   font-size: 18px;
-  line-height: 18px;
+  line-height: 21px;
   text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: 51px;
+  margin-bottom: 49px;
+  letter-spacing: 0.9px;
 }
 
 .filter-option {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   padding-left: 35px;
 }
 
 .filter-input + label {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 17px;
   color: #283136;
 }
 
@@ -892,7 +895,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-option .catalog-label:hover,
-.filter-option .catalog-label:focus{
+.filter-option .catalog-label:focus {
   color: #000000;
 }
 
@@ -1039,7 +1042,8 @@ input[type="radio"].visually-hidden {
 .filter-button {
   background-color: #eeeeee;
   border: 0;
-  padding: 15px 90px;
+  padding: 15px 20px;
+  min-width: 260px;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
@@ -1231,12 +1235,12 @@ a:focus.sort {
   border: 0;
   font-weight: 500;
   margin-left: 80px;
-  padding: 14px 20px;
+  padding: 13px 20px;
   box-sizing: border-box;
   text-align: center;
   min-width: 200px;
   border-radius: 3px;
-  margin-top: 30px;
+  margin-top: 27px;
   text-transform: uppercase;
   display: inline-block;
   vertical-align: middle;
@@ -1313,18 +1317,18 @@ a:focus.sort {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 16px;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
   font-weight: 500;
 }
 
 .page-link {
+  display: block;
   color: #000000;
   background-color: #eeeeee;
   font-size: 16px;
   line-height: 18px;
   margin-right: 11px;
-  padding: 15px 20px;
+  padding: 16px 20px;
   border-radius: 2px;
 }
 
@@ -1349,12 +1353,15 @@ a:focus.sort {
 
 .page-link.active {
   background-color: #ffffff;
-  border: 1px solid #dbdbdb;
+  border: 2px solid #dbdbdb;
+  padding: 14px 19px;
 }
 
 .page-link.next {
   text-transform: uppercase;
-  padding: 15px 80px;
+  padding: 16px 20px;
+  min-width: 222px;
+  text-align: center;
   font-size: 16px;
   line-height: 18px;
 }
